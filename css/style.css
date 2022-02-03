@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    display: flex;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: black;
+}
+
+main{
+    background-color: black;
+    overflow: auto;
+    height: 80vh;
+}
+
+footer{
+    background-color: #222222;
+}
+
+span{
+    font-size: 13px;
+}
+
+header nav#top-bar.flex-container{
+    height: 10vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav span a{
+    background-color: rgba(60, 60, 60, 0.8);
+    border-radius: 5px;
+}
+
+nav span a, main span{
+    padding: 5px 10px;
+}
+
+nav span a, main span, #bottom-bar-left div a, #bottom-bar-center div a {
+    color: white;
+    text-decoration: none;
+}
+
+nav span a#x{
+    margin: 0 20px 0 5px;
+}
+
+main div.flex-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.item{
+    flex-basis: 250px;
+    height: 140px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    position: relative;
+    margin-right: 5px;
+}
+main div.item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav#bottom-bar.flex-container{
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    min-height: 90px;
+}
+
+#bottom-bar-left div, #bottom-bar-center div{
+    margin: 0 15px 0;
+    color: white;
+}
+#bottom-bar-right{
+    background-color: #4a4a4a;
+    height: 100%;
+    align-items: center;
+}
+
+#bottom-bar-right a{
+    color: red;
+    margin: 0 20px 0;
+    text-decoration: none;
+}
+
+#bottom-bar-left div.flex-container, #bottom-bar-center div.flex-container{
+    flex-direction: column;
+}
+
+#bottom-bar div.icon-chevron{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bottom-bar div i#chevron-up{
+    font-size: 15px;
+}
+
+#bottom-bar-left div i, #bottom-bar-center div i{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.color-green{
+    color: #4bc800;
+}
+
+.fa-th{
+    margin-right: 10px;
+}
