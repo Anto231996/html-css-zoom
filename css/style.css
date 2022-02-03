@@ -108,17 +108,17 @@ nav#bottom-bar.flex-container{
     text-decoration: none;
 }
 
-#bottom-bar-left div.flex-container, #bottom-bar-center div.flex-container{
+#bottom-bar-left div.flex-container, #bottom-bar-center div.flex-container, 
+#bottom-bar div.icon-chevron{
     flex-direction: column;
 }
 
 #bottom-bar div.icon-chevron{
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-#bottom-bar div i#chevron-up{
+#bottom-bar div .fa-chevron-up{
     font-size: 15px;
 }
 
